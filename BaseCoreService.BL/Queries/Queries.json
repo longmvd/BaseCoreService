@@ -1,0 +1,6 @@
+{
+  "BaseBL_GetAll": "SELECT * FROM {0};",
+  "BaseBL_GetPaging": "SELECT {0} FROM {1} WHERE {2};",
+  "RoleBL_GetRolesByUserID": "SELECT r.* FROM role r INNER JOIN user_role ur ON r.RoleID = ur.RoleID WHERE ur.UserID = @UserID",
+  "UserBL_ValidateDuplicated": "SELECT Count(*) FROM user u WHERE u.UserName = @UserName OR u.Email = @Email OR PhoneNumber = @PhoneNumber"
+}

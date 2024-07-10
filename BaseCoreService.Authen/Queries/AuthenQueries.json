@@ -1,0 +1,4 @@
+﻿{
+  "AuthBL_Login": "Select * FROM user Where UserName = @UserName AND Password = @Password;",
+  "AuthBL_GetUserRoles": "SELECT r.* FROM role r INNER JOIN user_role ur WHERE ur.UserID = @UserID"
+}
